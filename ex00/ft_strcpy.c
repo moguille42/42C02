@@ -6,19 +6,12 @@
 /*   By: moguille <moguille@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 14:22:12 by moguille          #+#    #+#             */
-/*   Updated: 2025/03/02 19:38:30 by moguille         ###   ########.fr       */
+/*   Updated: 2025/03/02 23:20:09 by moguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-
 char	*ft_strcpy(char *dest, char *src)
-
 {
-	char	*originaldest = 0;
-
-	originaldest = dest;
 	while (*src != '\0')
 	{
 		*dest = *src;
@@ -29,14 +22,25 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
+/*#include <string.h>
+#include <stdio.h>
+
 int	main(void)
 {
-	char	originaldest[14];
-	char	dest[20];
+	char	*src;
+	char	*dest;
 
-	originaldest[14] = "tengo hambre\n";
-	ft_strcpy(dest, originaldest);
-	printf("la cadena origen: %s\n", originaldest);
+	char	a[]= "negrita";
+	char	b[]= "amarilla";
+
+	src = &a[0];
+	dest = &b[0];
+
+	printf("la cadena origen: %s\n", src);
+	printf("la cadena destino: %s\n", dest);
+	//strcpy(dest, src);
+	ft_strcpy(dest, src);
+	printf("la cadena origen: %s\n", src);
 	printf("la cadena destino: %s\n", dest);
 	return (0);
-}
+}*/
