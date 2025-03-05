@@ -6,7 +6,7 @@
 /*   By: moguille <moguille@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 18:19:17 by moguille          #+#    #+#             */
-/*   Updated: 2025/03/04 19:24:18 by moguille         ###   ########.fr       */
+/*   Updated: 2025/03/05 18:43:45 by moguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,4 @@ int	ft_str_is_printable(char *str)
 	printf("%s\t %d\n", str1, i);
 	printf("%s\t %d\n", str2, j);
 	return (0);
-}/*
+}*/
