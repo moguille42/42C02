@@ -6,24 +6,27 @@
 /*   By: moguille <moguille@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 18:19:17 by moguille          #+#    #+#             */
-/*   Updated: 2025/03/04 20:47:35 by moguille         ###   ########.fr       */
+/*   Updated: 2025/03/09 16:28:27 by moguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 char	*ft_strupcase(char *str)
 {
-	while (*str != '\0')
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (*str >= 'a' && *str <= 'z')
-			*str = *str - 32;
-		str++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] = str[i] - 32;
+		i++;
 	}
 	return (str);
 }
 
-/*int	main(void)
+/*#include <stdio.h>
+
+int	main(void)
 {
 	char	str[5] = "paola";
 	ft_strupcase(str);
