@@ -6,17 +6,20 @@
 /*   By: moguille <moguille@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 18:19:17 by moguille          #+#    #+#             */
-/*   Updated: 2025/03/05 18:21:27 by moguille         ###   ########.fr       */
+/*   Updated: 2025/03/09 16:34:08 by moguille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strlowcase(char *str)
 {
-	while (*str != '\0')
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (*str >= 'A' && *str <= 'Z')
-			*str = *str + 32;
-		str++;
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] = str[i] + 32;
+		i++;
 	}
 	return (str);
 }
